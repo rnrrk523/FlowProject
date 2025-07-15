@@ -1,0 +1,2362 @@
+@charset "UTF-8";
+li {
+	list-style-type: none;
+}
+ul {
+	list-style-type: none;
+}
+.outsider-text {
+	margin-bottom: 10px;
+	    font-family: Noto Sans KR, Malgun Gothic, "맑은 고딕", Apple SD Gothic Neo, "돋움", "굴림", Arial, sans-serif;
+    display: inline-block;
+    padding: 1px 9px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+    border-radius: 12px;
+    line-height: 19px;
+}
+.outsider_project {
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.project-status-group {
+	width : auto;
+	float:left;
+	display: inline-block;
+    margin: 2px 0 0 8px;
+    vertical-align: middle;
+}
+.admin_project {
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.public_project {
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.company_project {
+	position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.project-status-group i {
+	vertical-align: middle;
+}
+.admin-icon {
+	margin-bottom: 10px;
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-lock.svg?v=051451eb5ceb194b34de527cde6048906610d018) no-repeat center / cover;
+}
+.company-icon {
+	margin-bottom: 10px;
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon-company.svg?v=21ba55547d83075f35da3aefd2d6e5b86b478348) no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.public-icon {
+	margin-bottom: 10px;
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon-open-project.svg?v=4b10ab8d16eaee06233abff3d0b2bd3e6b31b68a) center no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+.create-flow-background-1 {
+	width :1920px;
+	height : 953px;
+	overflow-y: auto;
+    -ms-overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+}
+.project-make-1 {
+	display: table;
+    width: 100%;
+    height: 100%;
+}
+.project-make-2 {
+	display: table-cell;
+    vertical-align: middle;
+}
+.create-post {
+	position: relative;
+    z-index: 5;
+    width: 674px;
+    margin: 30px auto 0 auto;
+    padding: 13px 0 0;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+.create-post-header {
+	width : 672px;
+	position: relative;
+    height: 30px;
+    padding: 3px 120px 3px 30px;
+}
+.header-left {
+	width: 572px;
+    height: 24px;
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.create-post-title {
+	float: left;
+    font-size: 16px;
+    color: #333;
+}
+.select-project-btn {
+	position: relative;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.select-project-btn:before {
+	content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    background: #ddd;
+    margin-left: 10px;
+}
+.postArrowicon {
+	width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-arrow-dwn-55.svg?v=76eb009fb1fd68505f742c334179f6dc752f8f29) no-repeat center / cover;
+}
+.post-project-color {
+	flex-shrink: 0;
+    margin: 0 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-post-project {
+	position: absolute;
+    left: 120px;
+    top: 28px;
+    width: 100%;
+    max-width: 434px;
+    max-height: 393px;
+    border: 1px solid #777;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+.search-post-project div {
+	display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 20px 20px 16px;
+    padding: 0 20px;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+}
+
+.icon-search {
+	position: relative;
+    
+    display: block;
+	flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    background: url(https://flow.team/flow-renewal/assets/images/icon-search.svg?v=304211365c59dd79e7b701ae194c7b293eab732c) no-repeat center / cover;
+}
+.select-project-search {
+	width: 100%;
+	height: 44px;
+    color: #6449fc;
+    font-weight: 700;
+    border:0px;
+}
+.select-project-list {
+	max-height: 300px;
+    margin-right: 5px;
+    margin-bottom: 22px;
+    overflow-y: scroll;
+    padding : 0px;
+}
+.select-project-list li {
+	display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 38px;
+    cursor: pointer;
+}
+.color-code-1 {
+	background-color : #35BB9A;
+	border: solid 1px #35BB9A!important;
+}
+.color-code-2 {
+	background-color : #008000;
+	border: solid 1px #008000!important;
+}
+.color-code-3 {
+	background-color : #ffd700;
+	border: solid 1px #ffd700!important;
+}
+.color-code-4 {
+	background-color : #ffa500;
+	border: solid 1px #ffa500!important;
+}
+.color-code-5 {
+	background-color : #ff0000;
+	border: solid 1px #ff0000!important;
+}
+.color-code-6 {
+	background-color : #ff1493;
+	border: solid 1px #ff1493!important;
+}
+.color-code-7 {
+	background-color : #00bfff;
+	border: solid 1px #00bfff!important;
+}
+.color-code-8 {
+	background-color : #4169e1;
+	border: solid 1px #4169e1!important;
+}
+.color-code-9 {
+	background-color : #800080;
+	border: solid 1px #800080!important;
+}
+.color-code-10 {
+	background-color : #708090;
+	border: solid 1px #708090!important;
+}
+.color-code-11 {
+	background-color : #000000;
+	border: solid 1px #000000!important;
+}
+.color-code-12 {
+	background-color : #ffffff;
+	border: solid 1px #ffffff!important;
+}
+.project-item>div {
+	margin-left: 30px;
+	margin-right: 8px;
+	width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding : 0px !important; 
+}
+.project-title-value {
+	max-width: 324px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #555;
+    font-size: 13px;
+}
+.btn-minimize {
+	position: absolute;
+    top: 0;
+    right: 50px;
+    width: 24px;
+    height: 24px;
+    background : #fff;
+    border : 0px;
+    cursor :pointer;
+}
+.btn-close {
+	right: 20px;
+	position: absolute;
+    top: 0;
+    min-width: 24px;
+    min-height: 24px;
+    background : #fff;
+    border : 0px;
+    cursor :pointer;
+}
+.btn-minimize-icon {
+	position: absolute;
+    top: 3px;
+    left: 4px;
+    display: inline-block;
+	width : 30.19px;
+	height : 15px;
+	background: url(../images/minimize-btn.png);
+	background-size : 30.19px 15px;
+}
+.btn-minimize-icon:hover {
+	background: url(../images/minimize-btn-hover.png);
+	background-size : 30.19px 15px;
+}
+.btn-close-icon {
+	position: absolute;
+    top: -7px;
+    left: 4px;
+    display: inline-block;
+	width : 30.08px;
+	height : 30px;
+	background: url(../images/close-btn.png);
+	background-size : 30.08px 30px;
+}
+.btn-close-icon:hover {
+	background: url(../images/close-btn-hover.png);
+	background-size : 30.08px 30px;
+}
+.create-post-nav {
+	display: flex;
+    width: 100%;
+    margin-top: 12px;
+    padding: 0 30px;
+    margin-bottom: 0px;
+}
+.create-post-nav li {
+	display: flex;
+    -webkit-box-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.create-tab-write .create-tab-task .create-tab-schedule
+.create-tab-work .create-tab-vote {
+    border-color: #333;
+    font-weight: 500;
+}
+.post-type-item > button {
+	color: #ccc;
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    border : 0px;
+    border-bottom: 2px solid #ccc;
+    background : #fff;
+    cursor : pointer;
+}
+.post-type-item > button:hover {
+	border-bottom: 2px solid #333;
+	color : #333;
+}
+.write-icon {
+	width : 15.06px;
+	height : 16px;
+	background: url(../images/writing-img-off.png);
+	background-size : 15.06px 16px;
+	margin-right : 10px;
+}
+.post-type-item > button:hover .write-icon {
+	background: url(../images/writing-img.png);
+	background-size : 15.06px 16px;
+}
+.create-tab-write.on {
+	border-bottom: 2px solid #333 !important;
+	color : #333 !important;
+}
+.create-tab-write.on#crt-post > .write-icon {
+	background: url(../images/writing-img.png) !important;
+	background-size : 15.06px 16px !important;
+}
+.task2-icon {
+	width : 15.06px;
+	height : 16px;
+	background: url(../images/task-img-off.png);
+	background-size : 15.06px 16px;
+	margin-right : 10px;
+}
+.post-type-item > button:hover .task2-icon {
+	background: url(../images/task-img.png);
+	background-size : 15.06px 16px;
+}
+.create-tab-write.on#crt-task > .task2-icon {
+	background: url(../images/writing-img.png) !important;
+	background-size : 15.06px 16px !important;
+}
+.schedule-icon {
+	width : 15.06px;
+	height : 16px;
+	background: url(../images/schedule-img-off.png);
+	background-size : 15.06px 16px;
+	margin-right : 10px;
+}
+.post-type-item > button:hover .schedule-icon {
+	background: url(../images/schedule-img.png);
+	background-size : 15.06px 16px;
+}
+.create-tab-write.on#crt-schedule > .schedule-icon {
+	background: url(../images/schedule-img.png)!important;
+	background-size : 15.06px 16px!important;
+}
+.work-icon {
+	width : 15.06px;
+	height : 16px;
+	background: url(../images/work-img-off.png);
+	background-size : 15.06px 16px;
+	margin-right : 10px;
+}
+.post-type-item > button:hover .work-icon {
+	background: url(../images/work-img.png);
+	background-size : 15.06px 16px;
+}
+.create-tab-write.on#crt-work > .task2-icon {
+	background: url(../images/work-img.png)!important;
+	background-size : 15.06px 16px!important;
+}
+.vote-icon {
+	width : 15.06px;
+	height : 16px;
+	background: url(../images/vote-img-off.png);
+	background-size : 15.06px 16px;
+	margin-right : 10px;
+}
+.post-type-item > button:hover .vote-icon {
+	background: url(../images/vote-img.png);
+	background-size : 15.06px 16px;
+}
+.create-tab-write.on#crt-vote > .task2-icon {
+	background: url(../images/writing-img.png) !important;
+	background-size : 15.06px 16px !important;
+}
+.create-post-main {
+	min-height: 682px;
+    max-height: calc(100vh - 274px);
+    overflow-y: auto;
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position .3s, -webkit-mask-position .3s;
+    overflow-x: hidden;
+}
+.create-post-main fieldset {
+	min-width: 0;
+	border: 0px;
+	padding: 0px;
+}
+.postTitle {
+	height: 62px;
+    padding-top: 20px;
+    margin-left: 30px;
+    width: calc(100% - 60px);
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid #eee !important;
+    resize: none;
+    border: 0px;
+    border-width : 0;
+    outline: none;
+}
+.postTitle::placeholder {
+	color : #ccc;
+}
+
+.post-content-box-post {
+	width : 665px;
+	height : 570px;
+}
+
+
+.create-post-bottom {
+	margin-left: 30px;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    width: 612px;
+    height : 62px;
+    background: #fff;
+}
+.create-btn-group {
+	display: flex;
+    gap: 4px;
+    float: left;
+    margin-top: 3px;
+    padding: 0px;
+}
+.create-btn-group li {
+	position: relative;
+}
+.create-btn-group>li>button {
+	display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    border : 0;
+    background : #fff;
+    cursor : pointer;
+}
+.create-file-icon {
+	display: inline-block;
+	width : 18px;
+	height : 18px;
+	background : url(../images/file_input.png) no-repeat center;
+	background-size : 18px;
+}
+.upload-menu {
+	display : none;
+	position: absolute;
+    bottom: 40px;
+    left: 0;
+    z-index: 1;
+    padding: 7px 10px 2px 14px;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #555;
+}
+.upload-menu button {
+	display: block;
+	width: 100%;
+    height: 19px;
+    margin-bottom: 6px;
+    line-height: 19px;
+    text-align: left;
+    white-space: nowrap;
+    background:#fff;
+    border:0px;
+}
+.upload-menu button:hover {
+	color:blue;
+}
+.icon-pc {
+	content: "";
+    background-image: url(https://team-0aau7t.flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=4634d76a1ca402f03d8824d1e65912fd00eca4ce);
+    background-size: 844px auto;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 12px;
+    height: 11px;
+    margin-right: 5px;
+    background-position: -3px -47px;
+    vertical-align: middle;
+}
+.icon-flowbox {
+	position: relative;
+    display: inline-block;
+    top: -1px;
+    left: -1px;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background: url(https://team-0aau7t.flow.team/flow-renewal/assets/images/icons/icon-flowdrive.svg?v=d6226047c6168ef205bc0003ebfcc09ed9074b8b);
+    background-size: cover;
+    vertical-align: middle;
+}
+.create-btn-group>li>button:hover .create-file-icon {
+	background : url(../images/file_input_hover.png) no-repeat center;
+	background-size : 18px;
+}
+.create-place-icon {
+	display: inline-block;
+	width : 18px;
+	height : 18px;
+	background : url(../images/place-btn.png)no-repeat center;
+	background-size : 18px;
+}
+.create-btn-group>li>button:hover .create-place-icon {
+	background : url(../images/place-btn-hover.png)no-repeat center;
+	background-size : 18px;
+}
+.create-right-menu {
+	position: relative;
+    float: right;
+}
+.create-private-btn {
+	position: relative;
+    float: left;
+    width: 185px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 31px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.create-private-btn.off:after {
+	position: absolute;
+    top: 15px;
+    right: 12px;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 4px;
+    background-position: -384px -29px;
+    background-image : url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88);
+    background-size: 844px auto;
+}
+.create-private-btn.on:after {
+	transform: rotate(180deg);
+	position: absolute;
+    top: 15px;
+    right: 12px;
+    display: block;
+    content: "";
+    width: 8px;
+    height: 4px;
+    background-position: -384px -29px;
+    background-image : url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88);
+    background-size: 844px auto;
+}
+.create-private-btn.full:before {
+	position: absolute;
+    top: 10px;
+    left: 12px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 14px;
+    background-position: -253px -24px;
+    background-image : url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88);
+    background-size: 844px auto;
+}
+.create-private-btn.admin:before {
+	position: absolute;
+    top: 10px;
+    left: 12px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 14px;
+    background: url(../images/lock.png) center no-repeat;
+    background-size: 15px 14px;
+}
+
+.create-post-option {
+	position: absolute;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    width: 185px;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+.private-option-full {
+	cursor: pointer;
+    font-size: 13px;
+}
+.private-option-full:hover{
+	color : blue;
+}
+.private-option-full-icon {
+	position: relative;
+    float: left;
+    top: 4px;
+    left: -4px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 14px;
+    background-position: -253px -24px;
+    background-image : url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88);
+    background-size: 844px auto;
+}
+.private-option-full:hover .private-option-full-icon {
+    background : url(../images/people-hover.png) no-repeat center;
+    background-size: 16px 14px;
+}
+.private-option-admin {
+	cursor: pointer;
+    font-size: 13px;
+}
+.private-option-admin:hover {
+	color:blue;
+}
+.private-option-admin-icon {
+	position: relative;
+    float: left;
+    top: 4px;
+    left: -4px;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 14px;
+    background : url(../images/lock.png) center no-repeat;
+    background-size: 15px 14px;
+}
+.private-option-admin:hover .private-option-admin-icon {
+	background-image : url(../images/lock-hover.png);
+    background-size: 15px 14px;
+}
+.temporary-storage {
+	position: relative;
+    min-width: 70px;
+    padding: 0 11px;
+    background: #e5e5e5;
+    line-height: 36px;
+    cursor: pointer;
+    float: left;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+}
+.temporary-count {
+	position: relative;
+    display: inline-block;
+    height: 100%;
+    margin: 0 -10px 0 7px;
+    padding: 8px 10px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #6449fc;
+}
+.temporary-count:before {
+	content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+}
+.create-post-submit-btn {
+	position: relative;
+    float: left;
+    min-width: 110px;
+    height: 36px;
+    margin-left: 10px;
+    padding: 0 10px;
+    background: #6449fc;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    border : 0px;
+}
+/*task*/
+.task-options {
+	padding: 20px 30px 1px;
+	position: relative;
+}
+.create-task-content-group {
+	margin:0px;
+	padding:0px;
+}
+.create-task-content-group>li {
+	display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 46px;
+}
+.create-task-content-group>li:last-child {
+	margin-bottom: 15px;
+}
+.task-manager-area {
+	-webkit-box-align: start;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+.create-task-content-group>li+li {
+	padding-top: 18px;	
+}
+.task-icon {
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 20px;
+    color: #555;
+    font-weight: 700;
+    font-size: 14px;
+    position: relative;
+}
+.task-state-img {
+	display: inline-block;
+	width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-status.svg?v=a53691ad51c7d6e8d6c3383ce06fbbd2948c7f30) no-repeat;
+}
+.task-content-cell {
+	float: left;
+    position: relative;
+    display: block;
+    -webkit-box-align: center;
+    color: #333;
+}
+.task-state-btn-group {
+	background: 0 0;
+}
+.task-state-btn {
+	display: block;
+    float: left;
+    width: auto;
+    min-width: 84px;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 220px;
+    font-weight: 700;
+    font-size: 13px;
+    border:0px;
+    cursor : pointer;
+    margin-right : 5px;
+    background: #eee;
+    color: #777;
+}
+.request.on {
+	background: #00b2ff;
+    color: #fff;
+}
+.progress.on {
+	background: #00b01c;
+	color: #fff;
+}
+.feedback.on {
+	background: #fd7900;
+	color: #fff;
+}
+.complete.on {
+	background: #402a9d;
+	color: #fff;
+}
+.hold.on {
+	background: #777;
+	color: #fff;
+}
+.subtask-input-area > .request, .subtask-input-area-box  div > .request, .state-layer li> .request {
+	background: #00b2ff;
+    color: #fff;
+}
+.subtask-input-area > .progress, .subtask-input-area-box  div > .progress, .state-layer li> .progress {
+	background: #00b01c;
+	color: #fff;
+}
+.subtask-input-area > .feedback, .subtask-input-area-box  div > .feedback, .state-layer li> .feedback {
+	background: #fd7900;
+	color: #fff;
+}
+.subtask-input-area > .complete, .subtask-input-area-box  div > .complete, .state-layer li> .complete {
+	background: #402a9d;
+	color: #fff;
+}
+.subtask-input-area > .hold, .subtask-input-area-box  div > .hold, .state-layer li> .hold {
+	background: #777;
+	color: #fff;
+}
+.task-manager-image {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-worker.svg?v=3b9b54ddb691066f7eae807ccd1f850f588603dc) no-repeat;
+}
+.user-box {
+	display: inline;
+    margin-bottom: -8px;
+}
+.manager-group {
+	vertical-align: top;
+}
+.manager-item {
+	margin-bottom: 8px;
+	display: inline-block;
+    cursor: pointer;
+    margin: 0 6px 0 0;
+    background: #eee;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #555;
+    border: 1px solid transparent;
+    cursor : pointer;
+}
+.manager-item:hover {
+	border-color :blue;
+}
+.manager-profile-img {
+	width: 28px;
+    height: 28px;
+    background-image: url(https://flow.team/flow-renewal/assets/images/none-profile.png?v=5afc31cd39280236d7a9ed9c511198240847f6b9);
+    border-radius: 6px 0 0 6px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.manager-profile-name {
+	line-height: initial;
+    vertical-align: middle;
+    color: #333;
+    font-weight: 700;
+    margin-right: 3px;
+    max-width: calc(100% - 55px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.manager-profile-remove {
+	width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -190px -75px / 844px auto;
+    vertical-align: middle;
+    border : 0px;
+    cursor : pointer;
+}
+.manager-profile-remove:hover {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -234px -75px / 844px auto;
+}
+.manager-search-input {
+	margin-bottom: 8px;
+	vertical-align: bottom;
+    width: auto;
+    max-width: 116px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-weight: 700;
+   	outline: none;
+}
+.search-manager-box {
+    left: 0px; /*111.625px 씩증가*/
+    transform: none;
+    display: block;
+    width: 280px;
+    height: auto;
+    max-height: 340px;
+    padding: 0;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 6px;
+    z-index: 6;
+}
+.sub-manager-list {
+	max-height: 240px;
+	width: 100%;
+	height: 100%;
+    overflow-y: auto;
+}
+.sub-manager-list-box {
+	height: 100%;
+	padding : 0px;
+}
+.select {
+	background: #efebff;
+    border-radius: 5px;
+}
+.select-list:hover {
+	background: #efebff;
+    border-radius: 5px;
+}
+.registration-list {
+	width: 100%;
+    height: 61px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+.profile-img-box {
+	flex-shrink: 0;
+	display: inline-block;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    border-radius: 16px;
+    margin: 0 10px;
+}
+.profile-content-box {
+	width: 100%;
+    max-width: calc(100% - 104px);
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.profile-content1 {
+	display: flex;
+    width: calc(100% - 5px);
+    color: #555;
+}
+.profile-content2 {
+	display: flex;
+    width: calc(100% - 5px);
+    line-height: 18px;
+    font-size: 12px;
+}
+.registration-name {
+	max-width: 100%;
+	font-weight: 700;
+    margin-right: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.registration-position {
+	display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
+.registration-company {
+	max-width: 100%;
+	display: inline-block;
+    color: #999;
+    font-weight: 700;
+    margin-right: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.registration-team {
+	display: inline-block;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon-date {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-date.svg?v=45718b5967dc68098b57ebd8c2862b3b71b6fc39) no-repeat;
+}
+.data-content {
+	display: inline-block;
+    height: 30px;
+    color: #555;
+    cursor: pointer;
+}
+.input-data {
+	cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #999;
+    display: inline-block;
+    height: 30px;
+    width: 74px;
+    background : #fff;
+    border : 0px;
+    text-decoration: underline;
+    padding : 0px;
+}
+.input-data-priority {
+	cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #999;
+    display: inline-block;
+    height: 30px;
+    background : #fff;
+    border : 0px;
+    text-decoration: underline;
+    padding : 0px;
+	width: 88px;
+}
+.input-data-priority:hover {
+	color:blue;
+}
+.icon-priority {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-rank.svg?v=21a6af066d6303d0b6acf2426e02d134b4cc23eb) no-repeat;
+}
+.priority-layer {
+	position: absolute;
+    top: 44px;
+    left: 0;
+    z-index: 10;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    transform: translate(-4px, 0);
+    white-space: nowrap;
+}
+.priority-btn-sub {
+	display: flex;
+    font-size: 13px;
+    color: #555;
+    border : 0;
+    background : #fff;
+    cursor : pointer;
+    font-weight : 550;
+}
+.priority-btn {
+	display: flex;
+    font-size: 13px;
+    color: #555;
+    border : 0;
+    background : #fff;
+    cursor : pointer;
+    font-weight : 550;
+}
+.priority-btn:hover {
+	color:blue;
+}
+.priority-btn+.priority-btn {
+	margin-top:6px;
+}
+.priority-btn-sub:hover {
+	color:blue;
+}
+.priority-btn-sub+.priority-btn-sub {
+	margin-top:6px;
+}
+.priority-btn span {
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+.priority-btn-sub span {
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+.priority-btn>span>i {
+	display:inline-block;
+	width : 12.25px;
+	height : 19px;
+	background-size : 12.25px 13px;
+}
+.priority-span-sub {
+	cursor : pointer;
+}
+.priority-span-sub i {
+	display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+.priority-btn-sub>span>i {
+	display:inline-block;
+	width : 12.25px;
+	height : 19px;
+	background-size : 12.25px 13px;
+}
+.icons.low {
+	background : url(../images/priority-low.png) no-repeat center;
+}
+.icons.middle {
+	background : url(../images/priority-middle.png) no-repeat center;
+}
+.icons.high {
+	background : url(../images/priority-high.png) no-repeat center;
+}
+.icons.emergency {
+	background : url(../images/priority-emergency.png) no-repeat center;
+}
+.low {
+	background : url(../images/priority-low.png) no-repeat center;
+}
+.middle {
+	background : url(../images/priority-middle.png) no-repeat center;
+}
+.high {
+	background : url(../images/priority-high.png) no-repeat center;
+}
+.emergency {
+	background : url(../images/priority-emergency.png) no-repeat center;
+}
+.task-group-img {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-section.svg?v=7d047450b89456b76ac5f55440f01ec28e650444) no-repeat;
+}
+.input-data-group {
+	cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #999;
+    display: inline-block;
+    height: 19px;
+    background : #fff;
+    border : 0px;
+    text-decoration: underline;
+    padding : 0px;
+	width: 60px;
+}
+.input-data-group:hover {
+	color:blue;
+}
+.priority-span span {
+	margin-left: 4px;
+    color: #333;
+}
+.priority-span i{
+	display : inline-block;
+	width : 13px;
+	height : 15px;
+	background-size : 13px 16px;
+}
+.board-remove-btn {
+	width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -190px -75px / 844px auto;
+    vertical-align: middle;
+    border : 0px;
+    cursor : pointer;
+}
+.board-remove-btn:hover {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -234px -75px / 844px auto;
+}
+.task-group-list-layer {
+	height: 190px;
+    position: absolute;
+    transform: none;
+    top: 28px;
+    left: 0px;
+    width: auto;
+    min-width: 250px;
+    padding: 10px 0;
+    background: #fff;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 6px;
+    z-index: 6;
+}
+.task-group-list-layers {
+	height: 190px;
+    position: absolute;
+    transform: none;
+    bottom: -142px;
+    left: 39px;
+    width: auto;
+    min-width: 250px;
+    padding: 10px 0;
+    background: #fff;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 6px;
+    z-index: 6;
+}
+.task-group-list-box {
+	width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position .3s, -webkit-mask-position .3s;
+}
+.task-group-list-box > ul {
+	padding : 0px;
+}
+.task-group-item {
+	height: 34px;
+	width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.task-group-name-box {
+	margin-left: 10px;
+    width: 76%;
+    color: #555;
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.task-group-name-box:hover {
+	color:blue;	
+}
+.task-group-items {
+	height: 34px;
+	width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.task-group-name-boxs {
+	margin-left: 10px;
+    width: 76%;
+    color: #555;
+    display: inline-block;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.task-group-name-boxs:hover {
+	color:blue;	
+}
+.task-group-value {
+	display: inline-block;
+    max-width: 520px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px 0;
+    margin-right: 3px;
+    cursor: pointer;
+    color: #333;
+    line-height: 15px;
+}
+.task-progress-img {
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-post-progress.svg?v=bdcb687aac36556de0884b704396c8e537e1387e) no-repeat;
+}
+.progress-bar {
+	position: absolute;
+    top: 0;
+    background: #00b01c;
+    border-radius: 3px;
+    max-width: 130px;
+    height: 6px;
+}
+.progress-bars {
+	position: absolute;
+    top: 0;
+    background: #00b01c;
+    border-radius: 3px;
+    max-width: 130px;
+    height: 6px;
+}
+.progress-graph {
+	display: table;
+    width: 100%;
+    max-width: 130px;
+    height: 6px;
+    background: #eee;
+    border-radius: 100px;
+    table-layout: fixed;
+}
+.progress-graph span:first-child {
+	width: 10px;
+}
+.progress-graphs {
+	display: table;
+    width: 100%;
+    max-width: 130px;
+    height: 6px;
+    background: #eee;
+    border-radius: 100px;
+    table-layout: fixed;
+}
+.progress-graphs span:first-child {
+	width: 10px;
+}
+.progress-btn {
+	position: relative;
+    display: table-cell;
+    cursor: pointer;
+}
+.progress-btns {
+	position: relative;
+    display: table-cell;
+    cursor: pointer;
+}
+.progress-text {
+	position: absolute;
+    top: -10px;
+    right: -40px;
+    margin-left: 10px;
+    color: #777;
+}
+.task-more-add-btn {
+	margin: 12px 0 6px 18px;
+    padding: 10px 0;
+    background: #fff;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #555;
+    border : 0px;
+    cursor:pointer;
+}
+.task-more-add-btn:hover {
+	color:blue;
+}
+.plus-icon {
+	margin-right: 4px;
+	font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    cursor:pointer;
+}
+.plus-icon:before {
+	content: "+";
+    color: #555;
+    top: 3px;
+    position: absolute;
+    left: -18px;
+}
+.task-more-add-btn:hover .plus-icon:before {
+	color:blue;
+}
+.task-options:after {
+	content: "";
+    position: absolute;
+    width: 92%;
+    z-index: 0;
+    height: 1px;
+    background-color: #eee;
+}
+.task-post-content-input {
+	width: 665px;
+    min-height: 205px;
+    padding: 20px 30px;
+    border: 0px;
+    outline: none;
+    border-width: 0;
+    font-size: 14px;
+}
+.task-post-content-input::placeholder {
+	color : #ccc;
+	font-weight : 500;
+}
+.subtask-area {
+	margin: 44px 0 30px;
+	padding: 0;
+}
+
+.subtask-header {
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: #555;
+}
+.subtask-header-title {
+	font-weight: 700;
+    overflow: hidden;
+    letter-spacing: -.02em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    background: 0 0;
+}
+.subtask-icon {
+	margin-right: 10px;
+    font-size: 14px;
+	display : inline-block;
+	width: 16.8px;
+    height: 16px;
+	background : url(../images/subtask.png) no-repeat center;
+	background-size: 16.8px 17px;
+}
+.subtask-count {
+	min-width: 14px;
+	margin-left: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #aaa;
+}
+.subtask-delete-all {
+	padding: 5px;
+    font-size: 13px;
+    color: #777;
+    border : 0px;
+    background-color : #fff;
+    cursor : pointer;
+}
+.subtask-delete-all:hover {
+	color:blue;
+}
+.subtask-li:first-child {
+	margin-top: 15px;
+}
+
+.subtask-btn {
+	display: flex;
+    margin: 15px 0 0 30px;
+    gap: 10px;
+}
+.create-subtask-btn {
+	height: 28px;
+    margin: 0;
+    padding: 0 10px 0 24px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #fff;
+    font-weight: 700;
+    color: #555;
+    cursor : pointer;
+}
+.create-subtask-btn:hover {
+	border-color : blue;
+	color : blue;
+}
+.plus-icons {
+	margin-right: 4px;
+	font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    cursor:pointer;
+}
+
+.plus-icons:before {
+	content: "+";
+    color: #555;
+    top: 1px;
+    position: absolute;
+    left: -18px;
+}
+.subtask-input-area:hover {
+	border-color:blue;
+	background-color : #f9f5ff;
+}
+.create-subtask-btn:hover .plus-icons:before {
+	color:blue;
+}
+.drag-button {
+	display:none;
+	position: absolute;
+    top: 13px;
+    left: -25px;
+    cursor: move;
+	width: 20px;
+    height: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=872a1c5e22e3d5973b6fd0267e91d74d5823294d) no-repeat -314px -101px / 844px auto;
+    vertical-align: middle;	
+}
+.drag-button:hover {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=872a1c5e22e3d5973b6fd0267e91d74d5823294d) no-repeat -336px -101px / 844px auto;
+}
+.subtask-li:hover .drag-button {
+	display:block;
+}
+.blind {
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 0px;
+    height: 0px;
+    margin: -1px;
+    overflow: hidden;
+}
+.state-btn {
+	display: inline-block;
+    width: auto;
+    min-width: 64px;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    font-size: 11px;
+    vertical-align: middle;
+    border-radius: 220px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    border : 0px;
+    cursor:pointer;
+}
+.state-layer {
+	left: 15px;
+    bottom: 49px;
+	position: absolute;
+    z-index: 10;
+    padding: 9px 13px;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    text-align: center;
+    transform: translate(-16px, 0);
+}
+.subtask-status {
+	display: inline-block;
+    width: auto;
+    min-width: 64px;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    font-size: 11px;
+    vertical-align: middle;
+    border-radius: 220px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.state-layer li+li {
+	margin-top: 6px;
+}
+.subtask-input {
+	display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    width: auto;
+    margin: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.input-subtask-title {
+	display: block;
+    width: 100%;
+    color: #333;
+    letter-spacing: -.02em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    background: 0 0;
+    outline: none;
+    border : 0px;
+}
+.subtask-menu {
+	display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    margin-left: auto;
+}
+.subtask-menu>li:first-child {
+	margin: 0;
+    -webkit-box-flex: 0;
+    flex: none;
+}
+.subtask-date-input-btn {
+	float: unset;
+	display: none;
+    line-height: normal;
+    margin: 0;
+    border-radius: 14px;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    position: relative;
+    background: #eee;
+    border: 1px solid #999;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+.subtask-date-input-div > .priority-layers {
+	width: 80px;
+    position: absolute;
+    top: -137px;
+    left: -6px;
+    z-index: 10;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    transform: translate(490px, 0);
+    white-space: nowrap;
+}
+.subtask-li:hover .subtask-date-input-btn {
+	display: inline-block;
+}
+.subtask-date-input-btn:hover {
+	border-color : blue;
+}
+.icons-calendar {
+	display: inline-block;
+   	width: 15.61px;
+    height: 14px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -544.5px -76px / 844px auto;
+}
+.subtask-date-input-btn:hover .icons-calendar {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -561.5px -76px / 844px auto;
+}
+.icons-priorty {
+	display: inline-block;
+   	width: 15.61px;
+    height: 14px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -440px -75px / 844px auto;
+}
+.subtask-date-input-btn:hover .icons-priorty {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -471px -75px / 844px auto;
+}
+.icons-manager {
+	display: inline-block;
+   	width: 15.61px;
+    height: 14px;
+    min-width: 20px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -444px -102px / 844px auto;
+}
+.subtask-date-input-btn:hover .icons-manager {
+	 background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=70f0c2f6127f660f4cdd1cc1a3cd96bae5aafc88) no-repeat -461px -102px / 844px auto;
+}
+
+.subtask-menu li+li {
+	margin-left : 3px;
+}
+.subtask-remove-btn {
+	right: -28px;
+    top: 13px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -190px -75px / 844px auto;
+    vertical-align: middle;
+    border : 0px;
+    cursor : pointer;
+}
+.subtask-li:hover .subtask-remove-btn {
+	display : block;
+}
+.subtask-remove-btn:hover {
+	background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -235px -75px / 844px auto;
+}
+.subtask-bottom-create-layer {
+	padding: 0 30px;
+}
+.subtask-input-area-box {
+	margin-top : 15px;
+	position: relative;
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 15px 0;
+    background: #fff;
+    border: 1px solid #999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .04);
+    border-radius: 2px;
+}
+.subtask-enter-btn {
+	position: absolute;
+    right: -26px;
+    width: 20px;
+    height: 20px;
+    border : 0px;
+    background : #fff;
+}
+.icon-reply {
+	right: -28px;
+    top: 13px;
+    position: absolute;	
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=576fba21a319f842e8096c4c59e969d467896b2c) no-repeat -260px -75px / 844px auto;
+    vertical-align: middle;
+    border : 0px;
+    cursor : pointer;
+}
+.create-content-area {
+	min-height : 205px;
+}
+.create-content-value {
+	min-width: 612px;
+	display:inline-block;
+	padding: 0px;
+	margin-left : 26.5px;
+	min-height : 205px;
+	max-width: 612px;
+    padding-top: 0;
+    margin-top: 10px;
+    outline:none;
+    cursor:text;
+}
+[contenteditable="true"]:empty:before {
+   content: attr(placeholder);
+}
+.task-area {
+    position: relative;
+}
+#cancle {
+	color : red!important;
+}
+.cancle {
+		color : #999!important;
+}
+	.task-manager-select-box {
+		right: 0px;
+	    display: block;
+	    transform: none;
+	    padding: 0;
+	    bottom: 52px;
+	    position: absolute;
+	    width: 280px;
+	    height: 360px;
+	    background: #fff;
+	    border: 1px solid #777;
+	    box-sizing: border-box;
+	    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+	    border-radius: 6px;
+	    z-index: 6;
+	}
+	.task-manager-select-boxs {
+		right: 0px;
+	    display: block;
+	    transform: none;
+	    padding: 0;
+	    bottom: 52px;
+	    position: absolute;
+	    width: 280px;
+	    height: 360px;
+	    background: #fff;
+	    border: 1px solid #777;
+	    box-sizing: border-box;
+	    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+	    border-radius: 6px;
+	    z-index: 6;
+	}
+	.task-manager-search-layer {
+		margin: 0 0 10px;
+    	padding: 10px 10px 0;
+    	position: relative;
+	}
+	.task-manager-search-layers {
+		margin: 0 0 10px;
+    	padding: 10px 10px 0;
+    	position: relative;
+	}
+	.search-icon {
+		top:59%!important;
+		left:17px!important;
+		bacground-size : 16.06px 18px!important;
+	}
+	.search-icon:before {
+		margin: -2px 0 0 9px;
+		position: absolute;
+	    top: 50%;
+	    left: 14px;
+	    transform: translateY(-50%);
+	    color: #555;
+	    font-size: 16px;
+
+	}
+	#manager-input {
+		width: 100%;
+	    height: 34px;
+	    background: #fff;
+	    border: 1px solid #777;
+	    box-sizing: border-box;
+	    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+	    border-radius: 4px;
+	    padding-left: 34px;
+	    color: #6449fc;
+	    font-weight: 700;
+	    font-size: 13px;
+	}
+	.manager-inputs {
+		width: 100%;
+	    height: 34px;
+	    background: #fff;
+	    border: 1px solid #777;
+	    box-sizing: border-box;
+	    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+	    border-radius: 4px;
+	    padding-left: 34px;
+	    color: #6449fc;
+	    font-weight: 700;
+	    font-size: 13px;
+	}
+	.task-manager-list-layer {
+		overflow: auto;
+		display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+	    height: 250px;
+	}
+	.task-manager-list-layers {
+		overflow: auto;
+		display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    flex-direction: column;
+	    height: 250px;
+	}
+	.manager-select-list {
+		display:none;
+		padding : 5px;
+	}
+	.manager-select-lists {
+		display:none;
+		padding : 5px;
+	}
+	.manager-select-list.active {
+		display: flex;
+	    flex-wrap: wrap;
+	    width: 100%;
+	    height: auto;
+	    max-height: 100px;
+	    position: relative;
+	    padding: 6px 10px;
+	    box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+	    z-index: 1;
+	    overflow-y: auto;
+	}
+	.manager-select-lists.active {
+		display: flex;
+	    flex-wrap: wrap;
+	    width: 100%;
+	    height: auto;
+	    max-height: 100px;
+	    position: relative;
+	    padding: 6px 10px;
+	    box-shadow: 0 2px 3px rgba(0, 0, 0, .12);
+	    z-index: 1;
+	    overflow-y: auto;
+	}
+	.manager-select-item {
+	    height: 30px;
+		vertical-align: middle;
+		display: inline-block;
+	    cursor: pointer;
+	    margin: 0 6px 6px 0;
+	    background: #eeeaf5;
+	    font-size: 12px;
+	    line-height: 16px;
+	    border-radius: 6px;
+	    color: #555;
+	    border: 1px solid transparent;
+	}
+	.manager-select-item:hover {
+		border-color : blue;
+	}
+	.manager-select-items {
+	    height: 30px;
+		vertical-align: middle;
+		display: inline-block;
+	    cursor: pointer;
+	    margin: 0 6px 6px 0;
+	    background: #eeeaf5;
+	    font-size: 12px;
+	    line-height: 16px;
+	    border-radius: 6px;
+	    color: #555;
+	    border: 1px solid transparent;
+	}
+	.manager-select-items:hover {
+		border-color : blue;
+	}
+	.manager-profile {
+		min-width: 28px;
+		width: 28px;
+    	height: 28px;
+    	border-radius: 6px 0 0 6px;
+    	background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    background-color: #fff;
+	    border: 1px solid #eee;
+	    display: inline-block;
+	}
+	.manager-registration-name {
+		top: -10px;
+		display: inline-block;
+	    max-width: 174px;
+	    position: relative;
+	    vertical-align: middle;
+	    font-weight: 700;
+	    color: #555;
+	    margin-right: 3px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.manager-remove-btns {
+	    position: relative;
+    	top: -10px;
+		width: 20px;
+	    height: 20px;
+	    margin-right: 4px;
+	    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=588129f3ba8dd30a1b0cac4c748c94ea3bba0dd5) no-repeat -190px -75px / 844px auto;
+	    vertical-align: middle;
+	    border : 0px;
+	}
+	.manager-remove-btns:hover{
+		background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=588129f3ba8dd30a1b0cac4c748c94ea3bba0dd5) no-repeat -234px -75px / 844px auto;
+	}
+	.manager-remove-btns1 {
+	    position: relative;
+    	top: -10px;
+		width: 20px;
+	    height: 20px;
+	    margin-right: 4px;
+	    background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=588129f3ba8dd30a1b0cac4c748c94ea3bba0dd5) no-repeat -190px -75px / 844px auto;
+	    vertical-align: middle;
+	    border : 0px;
+	}
+	.manager-remove-btns1:hover{
+		background: url(https://flow.team/flow-renewal/assets/images/sprite-project-detail.png?v=588129f3ba8dd30a1b0cac4c748c94ea3bba0dd5) no-repeat -234px -75px / 844px auto;
+	}
+	.manager-all-list {
+		max-height: 350px;
+	    min-height: 170px;
+	    -webkit-box-flex: 1;
+	    flex: 1;
+	    height: 100%;
+	    width: 100%;
+	}
+	.manager-all-lists {
+		max-height: 350px;
+	    min-height: 170px;
+	    -webkit-box-flex: 1;
+	    flex: 1;
+	    height: 100%;
+	    width: 100%;
+	}
+	.manager-all-select-list {
+		margin : 0px;
+		padding : 0px;
+		height: 100%;
+	}
+	.manager-all-select-lists {
+		margin : 0px;
+		padding : 0px;
+		height: 100%;
+	}
+	.js-li-select {
+		margin : 0px;
+		padding : 0px;
+	}
+	.search-manager-item {
+		padding: 0 20px;
+		width: 100%;
+	    height: 61px;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    border-bottom: 1px solid #eee;
+	    cursor: pointer;
+	}
+	.search-manager-item:hover {
+		background: #efebff;
+	}
+	.search-manager-item.active {
+		background: #efebff;
+	}
+	.search-manager-items {
+		padding: 0 20px;
+		width: 100%;
+	    height: 61px;
+	    display: flex;
+	    -webkit-box-align: center;
+	    align-items: center;
+	    border-bottom: 1px solid #eee;
+	    cursor: pointer;
+	}
+	.search-manager-items:hover {
+		background: #efebff;
+	}
+	.search-manager-items.active {
+		background: #efebff;
+	}
+	.select-manager-btn {
+		display: inline-block;
+	    background: url(https://flow.team/flow-renewal/assets/images/allseach-sprite-type-5.png?v=bc3dd59de8ada3001461c7d6de271c997886b562) no-repeat -99px 0;
+	    background-size: 768px 40px;
+	    width: 21px;
+	    min-width: 21px;
+	    height: 20px;
+	}
+	.select-manager-btn.active {
+		display: inline-block;
+	    background: url(https://flow.team/flow-renewal/assets/images/allseach-sprite-type-5.png?v=77a7edc17cc6f52eda23f67a9727b28ff6918941) no-repeat -143px 0;
+	    background-size: 768px 40px;
+	    width: 21px;
+	    height: 20px;
+	}
+	.select-manager-btns {
+		display: inline-block;
+	    background: url(https://flow.team/flow-renewal/assets/images/allseach-sprite-type-5.png?v=bc3dd59de8ada3001461c7d6de271c997886b562) no-repeat -99px 0;
+	    background-size: 768px 40px;
+	    width: 21px;
+	    min-width: 21px;
+	    height: 20px;
+	}
+	.select-manager-btns.active {
+		display: inline-block;
+	    background: url(https://flow.team/flow-renewal/assets/images/allseach-sprite-type-5.png?v=77a7edc17cc6f52eda23f67a9727b28ff6918941) no-repeat -143px 0;
+	    background-size: 768px 40px;
+	    width: 21px;
+	    height: 20px;
+	}
+	.manager-item-profile {
+		display: inline-block;
+	    width: 40px;
+	    min-width: 40px;
+	    height: 40px;
+	    background-size: cover;
+	    border: 1px solid #eee;
+	    box-sizing: border-box;
+	    border-radius: 16px;
+	    margin: 0 10px;
+	}
+	.select-manager-all-profile-text {
+		width: 100%;
+	    max-width: calc(100% - 104px);
+	    display: inline-block;
+	    -webkit-box-flex: 1;
+	    flex: 1;
+	}
+	.select-manager-all-profile-text-top {
+		width: auto;
+		display: flex;
+		color: #555;
+	}
+	.select-manager-all-profile-text-bottom {
+		display: flex;
+		width: calc(100% - 5px);
+		line-height: 18px;
+    	font-size: 12px;
+	}
+	.select-manager-profile-name {
+		display: inline-block;
+    	color: #555;
+    	font-weight: 700;
+	    margin-right: 3px;
+	    max-width: calc(100% - 55px);
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    width: auto;
+	}
+	.select-manager-profile-position {
+		display: flex;
+    	width: auto;
+    	line-height: 18px;
+    	font-size: 12px;
+	}
+	.select-manager-profile-company {
+		display: inline-block;
+	    color: #999;
+	    font-weight: 700;
+	    margin-right: 3px;
+	    max-width: auto;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.select-manager-profile-departments {
+		display: inline-block;
+    	color: #999;
+    	overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	.task-manager-select-btn {
+		width: 100%;
+	    height: 34px;
+	    background: #fff;
+	    border-radius: 6px;
+	}
+	.task-manager-select-all-delete {
+		border : 0px;
+		position:absolute;
+		left: 10px;
+    	right: auto;
+    	width: 45%;
+	    height: 26px;
+	    bottom: 10px;
+	    background: #fff;
+	    text-align: center;
+	}
+	.task-manager-select-all-delete-text-box {
+		width: 100%;
+		background: #fff;
+	    border: 1px solid #ddd;
+	    color: #555;
+	    font-weight: 500;
+	    cursor: pointer;
+	    line-height: 24px;
+	    display: inline-block;
+	    height: 26px;
+	    text-align: center;
+	    font-size: 12px;
+	    border-radius: 4px;
+	}
+	.task-manager-select-all-delete-text-box.disable {
+		background: #eee;
+	    color: #999;
+	    cursor: default;
+	}
+	.delete-text {
+		color: inherit;
+    	text-decoration: none;
+	}
+	.select-manager-count {
+		position: relative;
+	    margin-left: 4px;
+	    color: #6449fc;
+	    vertical-align: middle;
+	}
+	.task-manager-select-input-btn {
+		border : 0px;
+		width: 45%;
+	    height: 26px;
+	    left: auto;
+	    right: 10px;
+	    bottom: 10px;
+	    position: absolute;
+	    background: #fff;
+	    text-align: center;
+	}
+	.select-text {
+		display: inline-block;
+	    width: 100%;
+	    height: 26px;
+	    line-height: 26px;
+	    text-align: center;
+	    background: #6449fc;
+	    color: #fff;
+	    font-size: 12px;
+	    border-radius: 4px;
+	}
+	.board-setting-layer {
+		padding : 0px;
+		overflow: hidden;
+	    position: absolute;
+	    z-index: 12;
+	    top: 50px;
+	    right: 35px;
+	    background: #fff;
+	    border: 1px solid #555;
+	    border-radius: 6px;
+	}
+	.board-setting-layer li {
+		position: relative;
+    	white-space: nowrap;
+    	margin: 5px 0;
+    	padding: 0 14px;
+    	cursor:pointer;
+	}
+	.board-setting-layer li:hover {
+		color:blue;
+	}
+	.post-edit-icon {
+		display: inline-block;
+	    margin: 0 6px 0 0;
+	    vertical-align: middle;
+	    background: url(https://flow.team/flow-renewal/assets/images/post-edit.svg?v=d3ca1717fd4100ea3ade9d63e13a534fa56c5126) no-repeat center / contain;
+	    width: 14px;
+	    height: 14px;
+	    position: relative;
+	    top: 1px;
+	}
+	.board-setting-layer li:hover > .post-edit-icon {
+		display: inline-block;
+	    margin: 0 6px 0 0;
+	    vertical-align: middle;
+	    background: url(https://flow.team/flow-renewal/assets/images/post-edit-hover.svg?v=4a8ece98b6ee9cf7af6bc0ce96ae0af4e34f0cb7) no-repeat center / contain;
+	    width: 14px;
+	    height: 14px;
+	    position: relative;
+	}
+	.post-del-icon {
+		display: inline-block;
+	    margin: 0 6px 0 0;
+	    vertical-align: middle;
+	    background: url(../images/delete-option.png) no-repeat center / contain;
+	    background-size : 14px;
+	    width: 14px;
+	    height: 14px;
+	    position: relative;
+	}
+	.board-setting-layer li:hover > .post-del-icon {
+		background: url(../images/delete-option-hover.png) no-repeat center / contain;
+	    background-size : 14px;
+	}
+.prioritys-layer {
+	position: absolute;
+    z-index: 10;
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    transform: translate(-4px, 0);
+    white-space: nowrap;
+}
+.select-nulls {
+	height: 100%;
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+.select-null {
+	display: table-cell;
+    vertical-align: middle;
+}
+.select-null span {
+	height: 58px;
+    line-height: 58px;
+    margin-top: 0;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.ui-datepicker {
+    z-index: 9999 !important;
+}

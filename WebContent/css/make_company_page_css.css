@@ -1,0 +1,197 @@
+@charset "UTF-8";
+* {
+	box-sizing : border-box;	
+	
+} 
+
+body {
+	margin: 0;
+    font-family: 'Roboto', 'Noto Sans KR', 'Noto Sans JP', 'Be Vietnam Pro', Arial, Helvetica, sans-serif, Apple Color Emoji, 'Twemoji Country Flags';
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.make_company_input_email_header{
+	display : flex;
+	position : relative;
+}
+.make_company_input_email_header_left{
+	background : url('../images/check_button_email_input.png') no-repeat center center;
+	background-size : 10px 20px;
+	position : absolute;
+	width : 10px;
+	height : 20px;
+	left : 33px;
+	top : 27px;
+	cursor : pointer;
+}
+.make_company_input_email_header_right{
+	position : absolute;
+	display : flex;
+	right : 42px;
+	top : 24px;
+
+}
+.already_have_id{
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 21px;
+	color : #777;
+	margin-top : 9px;
+	margin-right : 15px;
+}
+.already_have_id_go{
+	color : #9f00ba;
+	font-size : 16px;
+	border : 1px solid #9f00ba;
+	border-radius : 4px;
+	font-weight : 500;
+	width : 86px;
+	height : 38px;
+	text-align : center;
+	padding-top : 7px;
+	cursor : pointer;
+}
+/* ----------------------------------------------header*/
+
+
+.part_input_main_area{
+	position : absolute;
+	left : 793px;
+	top : 306px;
+}
+.parti_input_area{
+
+}
+/*---------------------------------------- 전체 area*/
+.flow_start_anounce{
+	font-size : 25px;
+	color : #333;
+	font-weight : 700;
+	margin-bottom : 50px;
+	margin-left : 86px;
+}
+.compnay_email_input:hover{
+	border : 1px solid #777;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.anounce_start{
+	margin-bottom : 16px;
+}
+.company_email_input{
+	width : 320px;
+	height : 44px;
+	border : 1px solid #ddd;
+	outline : none;
+}
+.indust {
+    width: 100%; 
+    height: 40px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #f9f9f9; 
+    padding: 5px; 
+    font-size: 14px; 
+    color: #333; 
+    margin-top : 13px;
+    outline : none;
+}
+.expect_per{
+	   width: 100%; 
+    height: 40px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #f9f9f9; 
+    padding: 5px; 
+    font-size: 14px; 
+    color: #333; 
+    margin-top : 14px;
+    outline : none;
+}    
+.now_start_button{
+	background : #aaa;
+	color : #ddd;
+	cursor : pointer;
+	font-size : 15px;
+	border-radius : 4px;
+	width : 320px;
+	height : 46px;
+	margin-top : 32px;
+	border : none;
+	cursor : pointer;
+}
+.now_start_button_add{
+	background : #9f00ba;
+	color : #fff;
+	font-size : 15px;
+	border-radius : 4px;
+	width : 320px;
+	height : 46px;
+	margin-top : 32px;
+	border : none;
+	cursor : pointer;
+}
+.google_login_grey_bars{
+	display : flex;
+	margin-top : 19px;
+	margin-left : -5px;
+}
+.left_gogle_grey_bar{
+	background : #ddd;
+	height : 1px;
+	width : 130px;
+	margin-top : 10px;
+}
+.right_gogle_grey_bar{
+	background : #ddd;
+	height : 1px;
+	width : 130px;
+	margin-top : 10px;
+	
+}
+.gogle_or{
+	margin-left : 12px;
+	margin-right : 12px;
+}
+.three_second_start{
+	background : url('../images/three_second.png') no-repeat center center;
+	background-size : 120px 29px;
+	width : 120px;
+	height : 29px;
+	margin-left : 98px;
+	margin-top : 16px;
+}
+.three_start_kor{
+	font-size : 12px;
+	line-height : 29px;
+	color : #9f00ba;
+	text-align : center;
+}
+.thr_google{
+	display : flex;
+	color : #333;
+	font-size : 14px;
+	background-color : #fff;
+	border : 1px solid #333;
+	font-weight : 400;
+	line-heihgt : 21px;
+	justify_content : center;
+	align-itmes : center;
+	width : 320px;
+	height : 44px;
+	margin-left : -6px;
+	margin-top : 9px;	
+	cursor : pointer;
+}
+.google_logo{
+	background : url('../images/google_img.png') no-repeat center center;
+	background-size : 23px 22px;
+	width : 23px;
+	height : 22px;
+	margin-left : 80px;
+	margin-top : 9px;
+}
+.google_to_go{
+	margin-top : 10px;
+	marign-left : 10px;
+}

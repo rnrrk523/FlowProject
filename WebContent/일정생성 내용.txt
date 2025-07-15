@@ -1,0 +1,58 @@
+<div class="schedule-add-content-box">
+				<div class="content-date-select">
+					<img id="date-select-icon" src="images/date-select-icon.png"/>
+					<input type="text" id="startDateInput" class="date-select-input datetimepicker" value=""/>
+					<div></div>
+					<input type="text" id="endDateInput" class="date-select-input datetimepicker" value=""/>
+					<label for="all-day-check"><input type="checkbox" id="all-day-check"/>종일</label>
+				</div>
+				<div class="content-member-select">
+					<img id="member-select-icon" src="images/member-select-icon.png"/>
+					<div id="memberItemsWrap">
+						<div class="member-item-box" data-idx="${memberIdx }">
+							<img class="user-prof" src="${memberInfo.profileImg }"/>
+							<span>${memberInfo.name }</span>
+							<button type="button" class="participantRemoveBtn"></button>
+						</div>
+					</div>
+					<div id="participantSelectBox">
+						<input type="text" id="member-add-input" placeholder="참석자 추가"/>
+						<table id="participantSelectTable" style="display: none;">
+							<tr>
+							<c:forEach var="dto" items="${pmList }">
+								<td class="selectMemberItem" data-idx="${dto.memberIdx }">
+									<img src="${dto.prof }" class="participantProfileImg"/>
+									<div class="participantInfoWrap">
+										<div class="participantNameAndPositiondiv"><span class="participantName">${dto.memberName }</span><span class="participantPosition">${dto.position }<span></div>
+										<div class="participantSelectCompanyName">${dto.companyName }</div>
+									</div>
+								</td>
+							</c:forEach>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="content-location-select">
+					<img id="location-select-icon" src="images/location-select-icon.png"/>
+					<div>
+						<input type="text" id="loaction-input" placeholder="장소를 입력하세요"/>
+					</div>
+				</div>
+				<div class="content-alarm-select">
+					<img id="alarm-select-icon" src="images/alarm-select-icon.png"/>
+					<select class="alarm-select">
+						<option>없음</option>
+						<option>10분 전 미리 알림</option>
+						<option>30분 전 미리 알림</option>
+						<option>1 시간 전 미리 알림</option>
+						<option>2 시간 전 미리 알림</option>
+						<option>3 시간 전 미리 알림</option>
+						<option>1일 전 미리 알림</option>
+						<option>2일 전 미리 알림</option>
+						<option>7일 전 미리 알림</option>
+					</select>
+				</div>
+				<div class="add-content-box">
+					<div class="textarea" placeholder="내용을 입력하세요." contenteditable="true"></div>
+				</div>
+			</div>

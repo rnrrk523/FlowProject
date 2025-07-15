@@ -1,0 +1,894 @@
+@charset "UTF-8";
+
+*{	
+	-webkit-box-sizing: border-box;
+   	-moz-box-sizing: border-box;
+	box-sizing : bolder-box;
+}
+body{
+   	font-size: 14px;
+    /* font-family: 'Roboto', 'Noto Sans KR', 'Noto Sans JP', 'Be Vietnam Pro', Arial, Helvetica, sans-serif, Apple Color Emoji, 'Twemoji Country Flags'; */
+	/* margin : 0px; */
+	padding : 0px;
+}
+ol, ul {
+    list-style: none;
+}
+.color-code-1 {
+	background-color : #35BB9A;
+	border: solid 1px #35BB9A!important;
+}
+.color-code-2 {
+	background-color : #008000;
+	border: solid 1px #008000!important;
+}
+.color-code-3 {
+	background-color : #ffd700;
+	border: solid 1px #ffd700!important;
+}
+.color-code-4 {
+	background-color : #ffa500;
+	border: solid 1px #ffa500!important;
+}
+.color-code-5 {
+	background-color : #ff0000;
+	border: solid 1px #ff0000!important;
+}
+.color-code-6 {
+	background-color : #ff1493;
+	border: solid 1px #ff1493!important;
+}
+.color-code-7 {
+	background-color : #00bfff;
+	border: solid 1px #00bfff!important;
+}
+.color-code-8 {
+	background-color : #4169e1;
+	border: solid 1px #4169e1!important;
+}
+.color-code-9 {
+	background-color : #800080;
+	border: solid 1px #800080!important;
+}
+.color-code-10 {
+	background-color : #708090;
+	border: solid 1px #708090!important;
+}
+.color-code-11 {
+	background-color : #000000;
+	border: solid 1px #000000!important;
+}
+.color-code-12 {
+	background-color : #ddd;
+	border: solid 1px #ddd!important;
+}
+/* .main{
+	width : 1920px;
+	height : 953px;
+} */
+/* .top{
+	width : 1920px;
+	height : 40px;
+	background-color : rgb(44, 42, 52);
+} */
+/* .body{
+	width : 1920px;
+	height : 913px;
+}
+.leftarea{
+	float : inline-start;
+	width : 233px;
+	height : 913px;
+	background-color : rgb(44, 42, 52);	
+} */
+.projects {
+	overflow: auto;
+    height: 833px;
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position .3s, -webkit-mask-position .3s;
+}
+.mainPop {
+	display : none;
+	overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 20;
+}
+.mainPop1 {
+	display: table;
+    width: 100%;
+    height: 100%;
+}
+.mainPop2 {
+	display: table-cell;
+    vertical-align: middle;
+}
+.color-select-box {
+	display: none;
+	position: relative;
+    background: #fff;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 434px;
+    height: auto;
+    padding: 15px 0 0 0;
+    margin: 0 auto;
+}
+.mainPop-header {
+	width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+}
+.mainPop-content {
+	padding: 15px 30px 0 30px;
+}
+.close-event {
+	display: inline-block;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon-minipop-close.svg?v=9363cdc26d93ed1aa13529ded2404de4ab114708) no-repeat center / contain;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+.close-event:hover {
+	background-image: url(https://flow.team/flow-renewal/assets/images/icons/icon-minipop-close-hover.svg?v=47696fd93baeacdfef19c7f36a80ca6da4f4f52c);
+}
+.mainPop-category {
+	padding-left: 7px;
+}
+.select-color-list {
+	margin: -10px;
+    padding: 6px 0 13px 0;
+}
+.select-color-list li {
+	margin: 10px;
+	width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    cursor : pointer;
+	
+}
+.mint {
+	background: #00b19c;
+    border: solid 1px #00b19c;
+}
+.green {
+	background: #00b01c;
+    border: solid 1px #00b01c;
+}
+.yellow {
+	background: #ffb800;
+    border: solid 1px #ffb800;
+}
+.orange {
+	background: #fd7900;
+    border: solid 1px #fd7900;
+}
+.red {
+	background: #ff3434;
+    border: solid 1px #ff3434;
+}
+.pink {
+	background: #ff5caa;
+    border: solid 1px #ff5caa;
+}
+.skyblue {
+	background: #00b2ff;
+    border: solid 1px #00b2ff;
+}
+.blue {
+	background: #06f;
+    border: solid 1px #06f;
+}
+.purple {
+	background: #8b00ea;
+    border: solid 1px #8b00ea;
+}
+.gray {
+	background: #999;
+    border: solid 1px #999;
+}
+.black {
+	background: #111;
+    border: solid 1px #111;
+}
+.white {
+	background: #ddd;
+    border: solid 1px #ddd;
+}
+.select-color-list li input {
+	display: inline-block;
+	width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: 26px;
+    right: -8px;
+    cursor:pointer;
+}
+.select-color-list li input:hover {
+	border-color : blue;
+}
+.mainPop-btn {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.cancle-mainPop {
+	display: inline-block;
+    background: #fff;
+    width: 47%;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    font-size: 13px;
+    max-width: 182px;
+}
+.cancle-mainPop:hover {
+	border-color : blue;
+}
+.submit-mainPop {
+	display: inline-block;
+    width: 47%;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    background: #6449fc;
+    border-radius: 4px;
+    color: #fff;
+    margin-left: 8px;
+    font-size: 13px;
+    max-width: 182px;
+}
+.submit-mainPop:hover {
+	background : #7163c3;
+}
+.label-select {
+	display : none;
+	position: relative;
+    background: #fff;
+    border: 1px solid #777;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    width: 434px;
+    min-height: 450px;
+    max-height: 670px;
+    height: 64vh;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.labelMain {
+	overflow-y: auto;
+    mask-position: left bottom;
+    -webkit-mask-size: 100% 20000px;
+    -webkit-mask-position: left bottom;
+    transition: mask-position .3s, -webkit-mask-position .3s;
+    height: 85%;
+    margin-top: 20px;
+    padding: 0 29px;
+}
+.labelMain li {
+	height: 43px;
+    border-bottom: 1px solid #eee;
+}
+.labelMain li:last-child {
+	border: 0;
+}
+.label-set-item {
+	position: relative;
+    padding: 10px 0 10px 10px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+.label-item:hover {
+	background : #f5f3ff;
+}
+.label-item:hover span {
+	color:blue;
+}
+.label-item-text {
+	max-width: 88%;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.label-item-text:before {
+	display: inline-block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin: 3px 8px 0 0;
+    background: url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=089ca37aa0169c91c4ce7e6d8c11c4c84f46d63c) no-repeat -304px -1px;
+    background-size: 656px auto;
+    vertical-align: top;
+}
+.label-item:hover .label-check-btn {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_hover.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.label-set-item.active > .label-check-btn {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.label-check-btn {
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(https://flow.team/flow-renewal/assets/images/allfile-sprite-type-1.png?v=a23ce56994c6a86bba6e28277376983003f33afc) no-repeat -257px 0;
+    background-size: 1438px auto;
+    width: 23px;
+    height: 22px;
+}
+#leftside > .left_upper > .left_items:nth-child(2)::before {
+	background-image: url("../images/ico_left_내프로젝트_on.png") !important;
+	width: 18px;
+	height: 16px;
+	background-size : 18px 16px;
+}
+.mainarea{
+	/* float : inline-end; (삭제)*/
+	width :1686px; /* (1686-->1663) */
+	height : 913px;
+	overflow: hidden;
+}
+#ProjectEditbar {
+	display: none;
+    background: #6449fc;
+    width: 1686px;
+    position: absolute;
+    z-index: 13;
+}
+.top-banner-2 {
+	max-width: 800px;
+	width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.totalEditButton {
+	font-size: 0;
+	padding: 0px;
+}
+.totalEditButton li {
+	display: inline-block;
+	cursor : pointer;
+}
+.totalEditButton li+li {
+	margin-left: 10px;
+}
+.top-banner {
+	display: inline-block;
+    min-width: 100px;
+    height: 36px;
+    margin: 7px 0;
+    padding: 0 13px;
+    border-radius: 4px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.top-banner:hover {
+	color : blue;
+	background : #fff;
+}
+.color > .top-banner i {
+	display: inline-block;
+    height: 20px;
+    width: 20px;	
+	position: relative;
+    top: 5px;
+    margin-right: 7px;
+    background : url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=4440f80e1f3bc06e91931f90de2b7988c3980497);
+    background-position: -252px 0px;
+    background-size: 844px auto;
+} 
+.color > .top-banner:hover i {
+	background : url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=4440f80e1f3bc06e91931f90de2b7988c3980497);
+    background-position: -275px 0px;
+    background-size: 844px auto;
+}
+.label > .top-banner i {
+	display: inline-block;
+    height: 20px;
+    width: 20px;	
+	position: relative;
+    top: 5px;
+    margin-right: 7px;
+    background : url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=4440f80e1f3bc06e91931f90de2b7988c3980497);
+    background-position: -414px 0px;
+    background-size: 844px auto;
+}
+.label > .top-banner:hover i {
+	background : url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=4440f80e1f3bc06e91931f90de2b7988c3980497);
+    background-position: -437px 0px;
+    background-size: 844px auto;
+}
+.totalEditSelect {
+	width: max-content;
+    display: flex;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 33px;
+    border-radius: 200px;
+    border: 1px solid #6449fc;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    color: #6449fc;
+    font-size: 13px;
+}
+.totalEditSelect span {
+	color: #6449fc;
+    font-size: 13px;
+}
+.totalEditSelect em {
+	width: auto;
+    height: auto;
+    color: #ff3434 !important;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 2px;
+    font-style: normal;
+}
+.ProjectEditbar-close {
+	    display: inline-block;
+    background: url(https://flow.team/flow-renewal/assets/images/main-sprite-type-2.png?v=f9ef62cb8da2be7c490c4e2bd7d05429fc5e1442) no-repeat -262px -26px;
+    background-size: 656px auto;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: -659px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+}
+.mainarea > .mainheader{
+    position: relative;
+    min-width: 750px;
+    height: 80px;
+    padding: 0 30px;
+    background: #fff;
+    z-index: 12;
+}
+.mainarea > .mainbody{
+    width : 1686px;
+    height : 833px;
+}
+.mainheader > .myproject {	
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 80px;
+    float: left;
+    color: #333;
+}
+.mainheader > .projectHometab {
+	width : 223.88px;
+	height : 80px;
+	position: relative;
+   	float: right;
+}
+.projectHometab > .projectHome_menu {
+	height: 80px;
+    weith : 223.88;
+}
+.menu-right {
+	width : 65.92px;
+	height : 28px;
+	float : right;
+	margin-top : 24px;
+}
+.menu-left {
+	width : 144.95px;
+	height : 28px;
+	float : right;
+	margin-right: 13px;
+	margin-top : 24px;
+}
+#array {
+	width :48.02px;
+	height : 26px;
+}
+#setting {
+	width : 53.02px;
+	hieght : 22.7px;
+}
+.menu-right .a{
+	margin-left : 7px;
+}
+.projectHome_menu .a{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #555;
+    vertical-align: top;
+}
+
+.boardbutton {
+    display: inline-block;
+    background: url(../images/board-change.png);
+    background-size: 26px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.listbutton {
+    background: url(../images/list-change.png);
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.listbutton:hover {
+	background: url(../images/list-change-hover.png);
+	background-size: 24px;
+}
+.menu-left > .a2{
+	margin-left : 20px;
+	border: 0;
+ 		background-color: transparent;
+ 		cursor: pointer;
+ 		float : left;
+}
+#array{
+	width : 50.02px;
+	height : 26px;
+}
+.projectlistArray {
+	display:none;
+}
+.projectlistArray.active {
+	display:block;	
+}
+#array:hover .arrayset {
+	color:blue;
+}
+#setting {
+	width : 53.02px;
+	height : 22.7px;
+}
+#setting:hover .settingset {
+	color:blue;
+}
+#array:hover > #array-image{
+	background : url(../images/array-hover.png);
+}
+#setting:hover > #setting-image{
+	background : url(../images/setting-hover.png);
+}
+.projectlistArray {
+	width: max-content;
+    max-width: 206px;
+    height: auto;
+    border: 1px solid #777;
+    background: #fff;
+    position: absolute;
+    top: 53px;
+    right: -21px;
+    z-index: 2;
+    border-radius: 4px;
+}
+.projectlistArray ul {
+	padding: 10px 14px;
+	margin: 0px;
+}
+.projectlistArray ul:last-child {
+    border-top: 1px solid #777;
+}
+.projectlistArray li {
+	display: flex;
+    gap: 6px;
+    font-size: 13px;
+}
+.projectlistArray li+li {
+	margin-top: 6px;
+}
+.projectlistArray li i {
+	display: block;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check.png?v=e913515ac7e5dfab28ae60f8d8efba5be327451d) no-repeat center / cover;
+    min-width: 20px;
+    height: 20px;
+}
+.order-item.active i {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.filter-item.active i {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.order-item:hover, .filter-item:hover span {
+	color: #6449fc;
+}
+.order-item:hover i, .filter-item:hover i {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_hover.png?v=6e2b27d4012c6349a7089beabbf631b49676b163) no-repeat center / cover;
+}
+.order-item.active:hover i{
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.filter-item.active:hover i  {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+#array-image {
+	background : url(../images/array.png);
+	width : 17px;
+	height : 22px;
+	margin-right : 5px;
+}
+#array-title {
+	width : 24.09px;
+	height : 18px;
+	display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#setting-image {
+	background : url(../images/setting.png);
+	width : 22px;
+	height : 21px;
+	margin-right : 5px;
+	
+}
+#setting-title {
+	width : 24.09px;
+	height : 18px;
+	display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+    
+}
+.settingset {
+	float:left;
+}
+.arrayset {
+	float:left;
+}
+.mainbody >.project {
+	padding: 0 30px;
+	width : 1686px;
+	height : 452px;
+	
+}
+.project > .project-content {
+	position: relative;
+	height : 452px;
+}
+.project-content > .project-content-layer {
+	position: relative;
+    width: 1148px;
+    margin: 0 auto;
+    
+}
+.project-content-layer {
+    max-width: 1138px !important;
+
+}
+.project-content-layer > .jointitle {
+	width : 1148px;
+	height : 56px;
+}
+.jointitle > .title {
+	width : 1148px;
+	height : 24px;
+	margin : 22px 0px 10px 10px;
+	font-weight: 900;
+   	font-size: 16px;
+   	color: #333;
+}
+.project-content-layer > .project {
+	width : 273.5px;
+	height : 180px;
+	float : left;
+	border : 1px solid #ddd;
+	border-radius: 6px;
+	margin : 0px 11px 11px 0px;
+	cursor: pointer;
+}
+.project:hover {
+	border-color : blue;
+}
+.project > .project-sidebar {
+	width : 10px;
+	height : 178px;
+	border-radius : 6px 0 0 6px;
+}
+
+.project-title {
+	float : left;
+	position : relative;
+	height : 148px;
+	margin : 15px 21px 15px 15px;
+}
+.project > #project-content {
+	float : left;
+}
+
+.alarmCheck {
+	display: none;
+	width: auto;
+    height: 28px;
+    line-height: 29px;
+    padding: 0 10px;
+    position: absolute;
+    top: -26px;
+    right: -39px;
+    border-radius: 200px;
+    background: #ff3532;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.project-title > .star-btn {
+	margin : 0;
+	width: 24px;
+   	height: 24px;
+}
+.star-button {
+	width: 24px;
+	height : 24px;
+	border: 0;
+ 		background-color: transparent;
+ 		cursor: pointer;
+ 		background-image : url(../images/icon_star.png);
+ 		background-size: 24px;
+}
+.star-button:hover {
+	background-image : url(../images/icon_star_hover.png);
+ 		background-size: 24px;
+}
+.star-button.active {
+      background-image: url('../images/icon_star_on.png');
+    }
+button {
+    background: #fff;
+    cursor: pointer;
+    border: 0px;
+}
+.edit-check {
+	display : none;
+	position: absolute;
+    right: -12px;
+    top: 3px;
+    width: 22px;
+    height: 22px;
+    padding : 0px;
+    background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check.png?v=e913515ac7e5dfab28ae60f8d8efba5be327451d) no-repeat center / cover;
+}
+
+.project-title > .edit-check:hover {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_hover.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.project.active .project-title > .edit-check {
+	background: url(https://flow.team/flow-renewal/assets/images/icons/icon_check_on.png?v=593e7c216065e9f4a44ad2bcb2a098b4500f3c8f) no-repeat center / cover;
+}
+.project-title > .project-txt {
+	position :relative;
+	height : 64px;
+	font-weight : 700;
+	font-size : 15px;
+	padding : 25px 0 0 0;
+	margin-bottom : 37px;
+}
+.project-txt:hover {
+	color : blue;
+}
+.project-title > .project-icon {
+	width : 225.5px; 
+	height : 23.2px;
+	
+}
+.project-icon > .project-peopleicon {
+	width : 16px;
+	height : 20px;
+}
+.project-peppleicon > .people-icon {
+	width : 16px;
+	height : 16px;
+	font-size: 11px;
+    font-weight: 700;
+    color: #999;
+    content: "\e998";
+    background : url(../images/peopleicons.jpg);
+	background-size : 16px;
+}
+.icon {
+	    width: 16px;
+}
+.member-cnt {
+	font-size: 16px;
+    color: #999;
+    content: "\e998";
+}
+#member-cnt {
+	margin-left : 3px;
+	float:left;	
+}
+
+
+#project-icon > .company-section {
+	width: auto;
+	height : 0px;
+	float : right;
+}
+
+.companyproject {
+	width : 21px;
+	height : 21px;
+	background : url(../images/companyproject.jpg) no-repeat center;
+	background-size : 21px;
+}
+
+.adminlock {
+	width : 16px;
+	height : 16px;
+	background : url(../images/adminlock.jpg) no-repeat center;;
+	background-size : 21px;
+}
+.company-relese-project {
+	width : 16px;
+	height : 18px;
+	background : url(../images/companyreleseproject.jpg) no-repeat center;;
+	background-size : 21px;
+	
+}
+#m {
+	float : left;
+	margin-left : 6px;
+}
+.project-count-null {
+	height: 700px;
+	grid-column: 1 / 5;
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+.project-count-null2 {
+	display: table-cell;
+    vertical-align: middle;
+}
+.project-count-null3 {
+	    width: 160px;
+    height: 116px;
+    background: url(https://flow.team/flow-renewal/assets/images/none_data.png?v=72c3c6587d001e80ec3f7681602c90ed8f314052) no-repeat;
+    margin: 0 auto;
+}
+.project-count-null2 span {
+	display: block;
+    width: auto;
+    height: 38px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}

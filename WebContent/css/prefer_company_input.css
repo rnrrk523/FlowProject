@@ -1,0 +1,295 @@
+@charset "UTF-8";
+* {
+	box-sizing : border-box;	
+} 
+.count_area{
+	position : absolute;
+	right : 75px;
+	font-size : 12px;
+	top : 210px;
+}
+body {
+	margin: 0;
+    font-family: 'Roboto', 'Noto Sans KR', 'Noto Sans JP', 'Be Vietnam Pro', Arial, Helvetica, sans-serif, Apple Color Emoji, 'Twemoji Country Flags';
+    overflow-x: auto;
+    overflow-y: hidden;
+    position : relative;
+    height : 100vh; 
+}
+.blind_area{
+	position : absolute;
+	height : 100vh;
+	width : 100%;
+	background-color: rgba(0, 0, 0, .7);
+	z-index : 12;
+	display : none;
+}
+	
+
+.make_company_input_email_header{
+	display : flex;
+	position : relative;
+}
+.all_agree{
+	position : absolute;
+	width : 328px;
+	height : 355px;
+	right : 793px;
+	top : 306px;
+	z-index : 20;
+	background-color : #fff;
+	border-radius : 10px;
+	box-shadow: 8px 10px 20px rgba(0, 0, 0, .2);
+	display : none;
+}
+.agree_header{
+	display : flex;
+}
+.all_agree_kor{
+	font-weight : 700;
+	font-size : 14px;
+	margin-top : 3px;
+	margin-left : 4px;
+}
+.close_button{
+	background : url('../images/agree_cancel.png') no-repeat center center;
+	background-size : 23px 23px;
+	width : 23px;
+	height : 23px;
+	margin-top : 14px;
+	margin-left : 19px;
+	cursor : pointer;
+}
+.all_check_area{
+	display : flex;
+	border-bottom : 1px solid #ccc;
+	width : 250px;
+	padding-bottom :7px;
+	margin-left : 14px;
+	margin-top : 22px;
+}
+input[type="checkbox"]{
+	width : 20px;
+	height : 20px;
+}
+.all_agree > div > label{
+	display : flex;
+	font-size : 14px;
+	font-weight : 400;
+	margin-top : 19px;
+	margin-left : 15px;
+}
+.all_agree > div > label > div{
+	margin-top  : 3px;	
+	margin-left : 2px;
+}
+.agree_explain_kor{
+	display : flex;
+}
+.red_area{
+	color : #fe6565;
+}
+.agree_submit_button{
+	color : #999;
+	background : #eee;
+	border-radius : 6px;
+	width : 268px;
+	height : 47.2px;
+	margin-top : 45px;
+	margin-left : 27px;
+	border : none;
+	color : #fff;
+	cursor : pointer;
+}
+.agree_submit_button_on{
+	border-radius : 6px;
+	background : #9f00ba;
+	border : none;
+	color : #fff;
+	cursor : pointer;
+}
+.agree_submit_button_on:hover{
+	background : #E134FF;
+}
+.make_company_input_email_header_left{
+	background : url('../images/check_button_email_input.png') no-repeat center center;
+	background-size : 10px 20px;
+	position : absolute;
+	width : 10px;
+	height : 20px;
+	left : 33px;
+	top : 27px;
+	cursor : pointer;
+}
+.make_company_input_email_header_right{
+	position : absolute;
+	display : flex;
+	right : 42px;
+	top : 24px;
+}
+.already_have_id{
+	font-weight : 400;
+	font-size : 14px;
+	line-height : 21px;
+	color : #777;
+	margin-top : 9px;
+	margin-right : 15px;
+}
+.already_have_id_go{
+	color : #9f00ba;
+	font-size : 16px;
+	border : 1px solid #9f00ba;
+	border-radius : 4px;
+	font-weight : 500;
+	width : 86px;
+	height : 38px;
+	text-align : center;
+	padding-top : 7px;
+	cursor : pointer;
+}
+/* ----------------------------------------------header*/
+
+
+.part_input_main_area{
+	position : absolute;
+	left : 793px;
+	top : 306px;
+	
+}
+.parti_input_area{
+
+}
+/*---------------------------------------- 전체 area*/
+.input_company{
+	font-size : 25px;
+	color : #333;
+	font-weight : 700;
+	margin-bottom : 12px;
+	margin-left : 46px;
+}
+.require_input{
+	font-size : 15px;
+	color : #666;
+	line-height : normal;
+	margin-left : 42px;
+	margin-bottom : 15px;
+}
+.compnay_email_input:hover{
+	border : 1px solid #777;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_name_input{
+	width : 320px;
+	height : 44px;
+	border : 1px solid #ddd;
+	outline : none;
+	border-radius : 6px;
+}
+.company_name_input:focus{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_name_input:hover{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_pass_input{
+	width : 320px;
+	height : 44px;
+	border : 1px solid #ddd;
+	outline : none;
+	border-radius : 6px;
+	margin-top : 17px;
+}
+.company_pass_input:focus{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_pass_input:hover{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_phone_input{
+	width : 250px;
+	height : 44px;
+	border : 1px solid #ddd;
+	outline : none;
+	border-radius : 6px;
+	margin-right : 8px;
+}
+.hidden_comple_phone{
+	width : 250px;
+	height : 44px;
+	border : 1px solid #ddd;
+	outline : none;
+	border-radius : 6px;
+	margin-right : 8px;
+	display : none;
+}
+
+.company_phone_input:focus{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+.company_phone_input:hover{
+	border: 1px solid #777;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .15);
+}
+
+.pass_button{
+	width : 60px;
+	height : 44px;
+	background : #eee;
+	border : 1px solid #ddd;
+	color : #aaa;
+	border-radius : 4px;
+}
+.pass_button_on{
+	display : none;
+	width : 60px;
+	height : 44px;
+	background : #623ad6;
+	border : 1px solid #ddd;
+	color : #aaa;
+	border-radius : 4px;
+}
+.pass_button_on:hover{
+	background : #520060;
+}
+.phone_fly_pin{
+	display : flex;
+	margin-top : 12px;
+}
+
+/* ----------------------------다음 버튼*/
+.now_start_button{
+	background : #aaa;
+	color : #ddd;
+	cursor : pointer;
+	font-size : 15px;
+	border-radius : 4px;
+	width : 320px;
+	height : 46px;
+	margin-top : 32px;
+	border : none;
+	cursor : pointer;
+}
+.now_start_button_add{
+	background : #9f00ba;
+	color : #fff;
+	font-size : 15px;
+	border-radius : 4px;
+	width : 320px;
+	height : 46px;
+	margin-top : 32px;
+	border : none;
+	cursor : pointer;
+}
+.now_start_button_add:hover{
+	background-color : #E134FF;
+}
+.timecounter{
+	color :     color: #ff6b6b;
+	font-size : 14px;
+	transform: translateY(-50%);
+}
