@@ -1,5 +1,5 @@
-1. 프로젝트 #1 - (2인 팀) 협업툴 프로젝트
-    
+프로젝트 #1 - (2인 팀) 협업툴 프로젝트
+
     개요 - FLOW 협업툴
     
     기간 - 2024. 09 ~ 2025. 02
@@ -31,3 +31,4 @@
        첫 프로젝트였던 만큼, JDBC를 활용한 데이터 흐름을 이해하는 데 집중하였고, Servlet & JSP 기반으로 MVC 패턴을 적용해 웹 애플리케이션을 구현하면서 전체 구조와 계층 간의 흐름을 명확히 이해할 수 있었습니다.
     
     서버링크 : http://114.207.245.107:9090/Project/Controller?command=Login
+    API명세서 링크 : https://www.notion.so/API-FLOW-20fdd5d87d4e80368470f47bbf180cc4?source=copy_link
